@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Savia Parkway — 650 Homes | Tanza, Cavite</title>
+  <meta name="description" content="Savia Parkway: 650 homes in Tanza, Cavite. View the project gallery, house options, and inquire with Tahanan Natin.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#2e5633">
+  <meta name="author" content="Tahanan Natin">
+
+  <!-- TODO: replace YOUR-PROJECT with your real Vercel project/domain name -->
+  <link rel="canonical" href="https://YOUR-PROJECT.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tahanan Natin">
+  <meta property="og:title" content="Savia Parkway — 650 Homes | Tanza, Cavite">
+  <meta property="og:description" content="650 homes in Tanza, Cavite. View the gallery and inquire with Tahanan Natin.">
+  <meta property="og:url" content="https://YOUR-PROJECT.vercel.app/">
+  <!-- Optional: add a Cloudinary image for link previews
+  <meta property="og:image" content="https://res.cloudinary.com/.../your-image.jpg">
+  -->
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Savia Parkway — 650 Homes | Tanza, Cavite">
+  <meta name="twitter:description" content="650 homes in Tanza, Cavite. View the gallery and inquire with Tahanan Natin.">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #f8f4ed;
+    }
+
+    #app {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      border: 0;
+      background: #f8f4ed;
+    }
+
+    #loading {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f4ed;
+      font-family: Arial, sans-serif;
+      color: #2e5633;
+      z-index: 10;
+      transition: opacity 0.2s ease;
+    }
+
+    .loader { text-align: center; padding: 24px; }
+    .loader strong { display: block; margin-bottom: 8px; font-size: 18px; }
+    .loader span { font-size: 14px; opacity: 0.8; }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 15px;
+      border: 4px solid #ddd;
+      border-top-color: #2e5633;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .fallback {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      font-family: Arial, sans-serif;
+      color: #172033;
+      line-height: 1.7;
+    }
+    .fallback h1 { color: #2e5633; margin-bottom: 12px; }
+  </style>
+</head>
+
+<body>
+
+  <div id="loading" aria-live="polite">
+    <div class="loader">
+      <div class="spinner" aria-hidden="true"></div>
+      <strong>Loading Savia Parkway...</strong>
+      <span>650 Homes | Tanza, Cavite</span>
+    </div>
+  </div>
+
+  <!-- TODO: replace the src with your Apps Script Web App URL (ends in /exec) -->
+  <iframe
+    id="app"
+    src="https://script.google.com/macros/s/AKfycbwsMqbjsKhoifnEPYXeXSaxrM2ielY7GxF5qGE5HR0rFw7UmdfXuYhdJFobGDJUBGmNrA/exec"
+    title="Savia Parkway — 650 Homes, Tanza, Cavite"
+    allow="autoplay; fullscreen; clipboard-write"
+    allowfullscreen
+    loading="eager"
+    referrerpolicy="strict-origin-when-cross-origin"
+  ></iframe>
+
+  <noscript>
+    <div class="fallback">
+      <h1>Savia Parkway — 650 Homes | Tanza, Cavite</h1>
+      <p>Please enable JavaScript to view the full Savia Parkway page, gallery, and inquiry form.</p>
+    </div>
+  </noscript>
+
+  <script>
+    (function () {
+      var iframe = document.getElementById('app');
+      var loading = document.getElementById('loading');
+
+      function hideLoading() {
+        if (!loading) return;
+        loading.style.opacity = '0';
+        setTimeout(function () { loading.style.display = 'none'; }, 220);
+      }
+
+      if (iframe) {
+        iframe.addEventListener('load', hideLoading);
+        setTimeout(hideLoading, 12000);
+      }
+    })();
+  </script>
+
+</body>
+</html>
